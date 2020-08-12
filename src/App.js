@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from "./Components/Sidebar/Sidebar";
+import AnnouncementContainer from "./Components/AnnouncementList/AnnouncementContainer";
+import {Route} from "react-router-dom";
+import SearchContainer from "./Components/Search/SearchContainer";
+import CreateAnnouncementContainer from "./Components/CreateAnnouncement/CreateAnnouncementContainer";
+import EditAnnouncementContainer from "./Components/EditAnnouncement/EditAnnouncementContainer";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+        <header>
+            Announcement
+        </header>
+        <hr/>
+        <Route path="/" exact>
+            <SearchContainer/>
+            <AnnouncementContainer/>
+            <Sidebar/>
+        </Route>
+        <Route path="/create" exact>
+            <CreateAnnouncementContainer />
+        </Route>
+        <Route path="/edit/:id?" exact>
+                <EditAnnouncementContainer/>
+        </Route>
     </div>
   );
 }

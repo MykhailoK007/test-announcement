@@ -1,0 +1,41 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+.announcement{
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+.IDAnnouncement{
+    margin: 10px;
+}
+
+.buttonsContainer{
+
+    display: flex;
+    justify-content: flex-end;
+}
+.announcementControl{
+    width:40px;
+    height: 40px;
+    border:none;
+}
+.announcementControl:hover{
+    border: 1px solid orange;
+
+}
+.edit{
+    margin-right: 10px;
+}
+.empty{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    color:grey;
+    font-family:Arial;
+
+}

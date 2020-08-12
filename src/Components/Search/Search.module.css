@@ -1,0 +1,23 @@
+.resultContainer{
+    width: 40%;
+    margin: -35px auto;
+    position: relative;
+    z-index: 1;
+    border:1px solid #d6b03e;
+    padding: 20px;
+    background: white;
+    border-top: none;
+    box-shadow: #967e33 -3px  2px 3px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.title{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.description{
+    font-size: 15px;
+}
